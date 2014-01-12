@@ -1,0 +1,17 @@
+Super Cool Homepage for Spenser Porter
+<br>
+<p> In case you were wondering, this is a list of things commonly found in pockets 
+
+<% items = ['lint','coins', 'gum', 'tiny' 'rodents', 'hands', 'smaller pockets', 'guns'] %>
+
+	<ul>
+      <% items.each do |items| %>
+        <li><%= items %></li>
+      <% end %>
+    </ul>
+
+    <p> We would ask that you please remove any
+     <%items.each do |item|%> 
+      <%= item%>,
+     <% end %>
+    	you current have in your pockets please.
