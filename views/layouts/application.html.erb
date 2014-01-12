@@ -1,10 +1,18 @@
+<%
+  def link_to(name, url)
+    return "<a href='#{url}'>#{name}</a>"
+  end
+  %>
+
 <html>
   <body>
-    <h1>You're using a layout</h1>
+    <h1>Not Funny</h1>
     <p>
-      <h3> I'm a header</h3>
-      <p>Put things in the header</p>
-      <a href='me.html'>Me</a>
+      <h3>Spensers super fun Ruby adventures</h3>
+      <p>All works a complete and total works of fiction</p>
+      <%= link_to('About me', 'me.html') %>
+      <%= link_to('My blog', 'http://www.myblogisntfunny.com') %>
+
 
     </p>
     <hr />
@@ -13,8 +21,8 @@
     </div>
     <hr />
     <div>
-      <h3> I'm a footer</h3>
-      <p>Put things in the footer</p>
+      <h3> Welcome to the end of the page, why don't you stay awhile?</h3>
+      <p>I love you</p>
     </div>
   </body>
 </html>
